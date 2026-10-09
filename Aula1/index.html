@@ -1,155 +1,185 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="icon" href="gragas_icon.jpg">
-        <style>
-.container p{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:20px;
-}            
-#para1 {
-  text-align: center;
-  color: white;
-}
-#para2{
-    color:antiquewhite
-}
- body {
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="gragas_icon.jpg">
+    <style>
+        .container p {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        #para1 {
+            text-align: center;
+            color: white;
+        }
+
+        #para2 {
+            color: antiquewhite
+        }
+
+        body {
             /* Substitua 'nome-da-sua-imagem.png' pelo caminho correto do arquivo salvo */
             background-image: url(image_60afec61.jpg);
-            
+
             /* Garante que a imagem cubra toda a tela sem distorcer */
             background-size: cover;
-            
+
             /* Centraliza o degradê na tela */
             background-position: center;
-            
+
             /* Impede que a imagem fique se repetindo como um mosaico */
             background-repeat: no-repeat;
-            
+
             /* Mantém o fundo fixo enquanto o usuário rola o conteúdo da página */
             background-attachment: fixed;
-            
+
             /* Cor de segurança caso a imagem demore para carregar */
-            background-color: #0b1a30; 
-            
+            background-color: #0b1a30;
+
             /* Zera as margens padrão do navegador */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            color: white; /* Cor do texto padrão para contrastar com o fundo escuro */
- }
-.conteudo {
+            color: white;
+            /* Cor do texto padrão para contrastar com o fundo escuro */
+        }
+
+        .conteudo {
             text-align: center;
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.1); /* Efeito sutil de transparência */
-            backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+            background: rgba(255, 255, 255, 0.1);
+            /* Efeito sutil de transparência */
+            backdrop-filter: blur(10px);
+            /* Efeito de vidro fosco */
             border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-.expandir{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 50px;
-    background-color: black;
-    transition: width 1s, heigth 1s, background-color 1s;
-}
-.expandir:hover{
-    width: 700px;
-    height: 50px;
-    background-color: darkgray;
-    transition: 1s;
-    
-}
-.container-imagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    width: 300.6px;
-    height: 298.8px;
-    object-fit: cover;
-    margin: 0 auto; /* Opcional: Centraliza o container na tela se ele estiver isolado */
-    transition: transform 0.3s ease-in-out; /* Anima o transform de forma suave */
-}
 
-.container-imagem:hover {
-    transform: scale(1.3); /* Aumenta o tamanho de todo o bloco em 30% a partir do centro */
-    object-fit: cover;
-}
+        .expandir {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            height: 50px;
+            background-color: black;
+            transition: width 1s, heigth 1s, background-color 1s;
+        }
 
-.container-imagem2 {
-    display-outside: flex;
-    justify-content: left;
-    align-items: left;     
-    width: 200px;
-    height: 200px;
-    margin: 0 auto; /* Opcional: Centraliza o container na tela se ele estiver isolado */
-    transition: transform 0.3s ease-in-out; /* Anima o transform de forma suave */
-}
+        .expandir:hover {
+            width: 700px;
+            height: 50px;
+            background-color: darkgray;
+            transition: 1s;
 
-.container-imagem2:hover {
-    transform: scale(1.3); /* Aumenta o tamanho de todo o bloco em 30% a partir do centro */
-}
- .imagem-ajustada {
-    width: 300px;           
-    height: auto;            
-    border: none;
- }
- .imagem-ajustada2 {
-    width: 250px;           
-    height: auto;            
-    border: none;
- }
- .container-titulos {
-  display: flex;
-    flex-direction: column; /* Força os títulos a ficarem um embaixo do outro (em coluna) */
-    align-items: center;    /* Centraliza os títulos horizontalmente na tela */
-    justify-content: center;/* Opcional: Centraliza verticalmente se o container tiver uma altura definida */
-    text-align: center;     /* Garante que o texto longo quebre linhas também centralizado */
-    gap: 10px;              /* Cria um espaçamento de 10px entre cada um dos títulos */
-    margin: 40px 0; 
- }
-</style>
-    </head>
-    <body>
-        <div class="conteudo">
+        }
+
+        .container-imagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300.6px;
+            height: 298.8px;
+            object-fit: cover;
+            margin: 0 auto;
+            /* Opcional: Centraliza o container na tela se ele estiver isolado */
+            transition: transform 0.3s ease-in-out;
+            /* Anima o transform de forma suave */
+        }
+
+        .container-imagem:hover {
+            transform: scale(1.3);
+            /* Aumenta o tamanho de todo o bloco em 30% a partir do centro */
+            object-fit: cover;
+        }
+
+        .container-imagem2 {
+            display-outside: flex;
+            justify-content: left;
+            align-items: left;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* Opcional: Centraliza o container na tela se ele estiver isolado */
+            transition: transform 0.3s ease-in-out;
+            /* Anima o transform de forma suave */
+        }
+
+        .container-imagem2:hover {
+            transform: scale(1.3);
+            /* Aumenta o tamanho de todo o bloco em 30% a partir do centro */
+        }
+
+        .imagem-ajustada {
+            width: 300px;
+            height: auto;
+            border: none;
+        }
+
+        .imagem-ajustada2 {
+            width: 250px;
+            height: auto;
+            border: none;
+        }
+
+        .container-titulos {
+            display: flex;
+            flex-direction: column;
+            /* Força os títulos a ficarem um embaixo do outro (em coluna) */
+            align-items: center;
+            /* Centraliza os títulos horizontalmente na tela */
+            justify-content: center;
+            /* Opcional: Centraliza verticalmente se o container tiver uma altura definida */
+            text-align: center;
+            /* Garante que o texto longo quebre linhas também centralizado */
+            gap: 10px;
+            /* Cria um espaçamento de 10px entre cada um dos títulos */
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
         <h1 id=para1>Gabriel Freitas Molina </h1>
-        </div>
-        <div class="container-titulos">
+    </div>
+    <div class="container-titulos">
         <h1 id="para2"> Estudando <small>Front-End e Engenharia de Software</small> </h1>
 
         <h2 id="para2"> Interesse de estudar a área para adquirir experiência para a vida profissional </h2>
 
         <h3 id="para2"> Contato: Email- <mark>gabifreitasmolina@gmail.com</mark> </h3>
-        </div>
-        <div class="center">
+    </div>
+    <div class="center">
         <h1 id="para1">Matérias de estudo </h1>
-        </div>
-        <div class="container-titulos">
+    </div>
+    <div class="container-titulos">
         <ul>
             <li id="para2"> Html </li>
             <li id="para2">Css </li>
-            <li id="para2"> JavaScript  </li>
+            <li id="para2"> JavaScript </li>
 
         </ul>
         <h1 id="container-titulos">Redes Sociais</h1>
-        
-        <div class="container-imagem">
-        <a href="https://www.youtube.com/@gabimine/videos" >
-            <img src="logo_youtbe-removebg-preview.png"  class="imagem-ajustada "  >
-        </a>
-        </div>
-        <div class="container-imagem2">
-        <a href="https://www.instagram.com/gabi_fm18/" >
-            <img src="Instagram-Gradient-Logo-PNG.png"  class="imagem-ajustada2 "   >
-        </a>
+        <div style="display: flex; flex-direction: row;">
+           
+            <div class="container-imagem">
+                <a href="https://www.youtube.com/@gabimine/videos">
+                    <img src="logo_youtbe-removebg-preview.png" class="imagem-ajustada ">
+                </a>
+            </div>
+            <div class="container-imagem2">
+                <a href="https://www.instagram.com/gabi_fm18/">
+                    <img src="Instagram-Gradient-Logo-PNG.png" class="imagem-ajustada2 ">
+                </a>
+            </div>
+
         </div>
         </p>
-    </body>
+</body>
+
 </html>
